@@ -71,7 +71,7 @@ _Goals:_ There are two ulterior goals for this device. The first is to check and
 
 **Storyboard** 
 
-![Alt text](Interactive-Lab-Hub/Lab 1/images/storyboard1.jpeg "Storyboard1")
+![Alt text](Lab 1/images/storyboard1.jpeg "Storyboard1")
 
 
 **Feedback**
