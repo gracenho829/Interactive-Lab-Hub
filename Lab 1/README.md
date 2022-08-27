@@ -1,5 +1,3 @@
-
-
 # Staging Interaction
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
@@ -57,32 +55,32 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 ## Part A. Plan 
 
-To stage an interaction with your interactive device, think about:
+**Setting**
 
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
+While technology has created massive opportunities in health care and health tech, there are still a lot of unprovided services that people need to better cope with health problems. One problem that still needs to be addressed is patients do not have the resources to check their health and parents/guardians/providers/doctors cannot reach out to help them if the patients are in a critical state.
 
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
+This product, **Luminous**, is a small device that a patient can wear to keep track of their hormonal or stress levels. Parents or doctors can also have a hold onto one of these devices so that they too can also be notified of any important changes in the status of a patient's health. If a patient is in a critical state, the device will notify the person at the other end of the device immediately with lights and audio, and will also provide directions to the location of the patient.
 
-_Activity:_ What is happening between the actors?
+_Setting:_ The household, hospital, school, in the streets, Anywhere with good connection. 
 
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
+_Players:_ The patient that needs to have their hormonal levels/stress levels tracked, health care providers, doctors, and parents. 
 
-The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
+_Activity:_ When the device detects spikes in their hormones or stress levels, the information will be relayed to their health care providers and their parents so that immediate action could be taken. Colors in a spectrum of red and green will indicate the patient's current status (Red for bad and green for good) and parents can check whether or not the patient is exposed to certain health threats. When a patient is in a critical state or is in danger of being exposed to a health threat, the device provides audio and light alarms to notify the guardian. It will also provide directions to the location of the patient so that they can quickly find the patient before they miss the golden time. 
 
-\*\***Describe your setting, players, activity and goals here.**\*\*
+_Goals:_ There are two ulterior goals for this device. The first is to check and be notified of the current status of the patient. The second is to be able to find the patient swiftly when they are in danger.
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+**Storyboard** 
 
-\*\***Include pictures of your storyboards here**\*\*
+![Alt text](Interactive-Lab-Hub/Lab 1/images/storyboard1.jpeg "Storyboard1")
 
-Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
-\*\***Summarize feedback you got here.**\*\*
+**Feedback**
 
+Very good idea. Maybe think of developing this as an idea for Product Studio
 
 ## Part B. Act out the Interaction
 
-Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
+
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
