@@ -72,6 +72,15 @@ _Goals:_ There are two ulterior goals for this device. The first is to check and
 **Storyboard** 
 
 ![Alt text](images/storyboard1.jpeg "Storyboard1")
+![Alt text](images/storyboard2.jpeg "Storyboard2")
+![Alt text](images/storyboard3.JPG "Storyboard3")
+![Alt text](images/storyboard4.JPG"Storyboard4")
+![Alt text](images/storyboard5.JPG "Storyboard5")
+![Alt text](images/storyboard6.JPG "Storyboard6")
+![Alt text](images/storyboard7.JPG "Storyboard7")
+![Alt text](images/storyboard8.JPG "Storyboard8")
+![Alt text](images/storyboard9.JPG "Storyboard9")
+![Alt text](images/storyboard10.JPG "Storyboard10")
 
 
 **Feedback**
@@ -80,25 +89,22 @@ Very good idea. Maybe think of developing this as an idea for Product Studio
 
 ## Part B. Act out the Interaction
 
+The interaction was done on an Apple Watch and the iPhone. 
+The real thing would have been done on a little device much smaller than the Apple Watch. It was kind of difficult having to attach an Apple Watch to your arm.
+People might say, "why not just attach it to your wrist?", but I wanted to create a device that would not be visible to people other than the user because users can be quite sensitive of that kind of information being exposed out in the open. 
 
-
-\*\***Are there things that seemed better on paper than acted out?**\*\*
-
-\*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+While acting out the scene, I realized that ... 
 
 
 ## Part C. Prototype the device
 
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
+I used the tinkerbelle to control the colors from green to red.. 
+The code was edited so that we were only presented with red-green swatches.
+I also embedded a picture on Google Maps to the phone just to give it the idea that the phone was giving directions to the location of the patient.
 
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
+I think the idea of creating a unique, creative prototype that makes use of lights and audio was a great approach to having us think about the interaction that we really wanted to bring. I was challenged to think about unique interactions (clicking, swiping, shaking, tracking, etc.) that could bring forth actual value to the user. 
 
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
-
-\*\***Give us feedback on Tinkerbelle.**\*\*
-
+However, I do think that the instructions were unclear and people were struggling to understand what was to be expected of the assignment.
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
@@ -120,6 +126,7 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+I've designed the chip to be small so that it wouldn't bother the user with their everyday routines
 
 ## Part F. Record
 
