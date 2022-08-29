@@ -59,13 +59,13 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 While technology has created massive opportunities in health care and health tech, there are still a lot of unprovided services that people need to better cope with health problems. One problem that still needs to be addressed is patients do not have the resources to check their health and parents/guardians/providers/doctors cannot reach out to help them if the patients are in a critical state.
 
-This product, **Luminous**, is a small device that a patient can wear to keep track of their hormonal or stress levels. Parents or doctors can also have a hold onto one of these devices so that they too can also be notified of any important changes in the status of a patient's health. If a patient is in a critical state, the device will notify the person at the other end of the device immediately with lights and audio, and will also provide directions to the location of the patient.
+This product is a small device that a patient can wear to keep track of their hormonal or stress levels. Parents or doctors can also have a hold onto one of these devices so that they too can also be notified of any important changes in the status of a patient's health. If a patient is in a critical state, the device will notify the person at the other end of the device immediately with lights and audio, and will also provide directions to the location of the patient.
 
 _Setting:_ The household, hospital, school, in the streets, Anywhere with good connection. 
 
 _Players:_ The patient that needs to have their hormonal levels/stress levels tracked, health care providers, doctors, and parents. 
 
-_Activity:_ When the device detects spikes in their hormones or stress levels, the information will be relayed to their health care providers and their parents so that immediate action could be taken. Colors in a spectrum of red and green will indicate the patient's current status (Red for bad and green for good) and parents can check whether or not the patient is exposed to certain health threats. When a patient is in a critical state or is in danger of being exposed to a health threat, the device provides audio and light alarms to notify the guardian. It will also provide directions to the location of the patient so that they can quickly find the patient before they miss the golden time. 
+_Activity:_ When the device detects spikes in their hormones or stress levels, the information will be relayed to their health care providers and their parents so that immediate action could be taken. Colors in a spectrum of red and green will indicate the patient's current status (Red for bad and green for good) and parents can check whether or not the patient is exposed to certain health threats. When a patient is in a critical state or is in danger of being exposed to a health threat, the device provides audio and light alarms to notify the guardian. It will also provide directions to the location of the patient so that they can quickly find the patient.
 
 _Goals:_ There are two ulterior goals for this device. The first is to check and be notified of the current status of the patient. The second is to be able to find the patient swiftly when they are in danger.
 
@@ -91,10 +91,8 @@ Very good idea. Maybe think of developing this as an idea for Product Studio
 
 The interaction was done on an Apple Watch and the iPhone. 
 The real thing would have been done on a little device much smaller than the Apple Watch. It was kind of difficult having to attach an Apple Watch to your arm.
-People might say, "why not just attach it to your wrist?", but I wanted to create a device that would not be visible to people other than the user because users can be quite sensitive of that kind of information being exposed out in the open. 
 
-While acting out the scene, I realized that ... 
-
+While acting out the scene, I realized that the device for the parent should be a bit bigger than the device that the child had because I realized that because this device held such valuable information, it had to be easily found, accessed, and used.  
 
 ## Part C. Prototype the device
 
@@ -104,12 +102,13 @@ I also embedded a picture on Google Maps to the phone just to give it the idea t
 
 I think the idea of creating a unique, creative prototype that makes use of lights and audio was a great approach to having us think about the interaction that we really wanted to bring. I was challenged to think about unique interactions (clicking, swiping, shaking, tracking, etc.) that could bring forth actual value to the user. 
 
-However, I do think that the instructions were unclear and people were struggling to understand what was to be expected of the assignment.
+I think that the instructions were unclear and people were struggling to understand what was to be expected of the assignment.
 
 ## Part D. Wizard the device
-Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
-\*\***Include your first attempts at recording the set-up video here.**\*\*
+<video src='images/Wizarding.mp4' width=180/>
+
+
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
@@ -118,22 +117,17 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
+![Alt text](images/costumes.jpeg "Costumes")
 
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
+Look was inspired by the Apple Watch. 
+I've designed the chip to be small so that it wouldn't bother the user with their everyday routines. 
+It has a keychain hanger on the top so that you can don't lose it. 
 
-\*\***Include sketches of what your devices might look like here.**\*\*
-
-\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
-
-I've designed the chip to be small so that it wouldn't bother the user with their everyday routines
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
-\*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
 
 
