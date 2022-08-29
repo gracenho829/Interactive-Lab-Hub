@@ -106,9 +106,7 @@ I think that the instructions were unclear and people were struggling to underst
 
 ## Part D. Wizard the device
 
-<video src='images/Wizarding.mp4' width=180/>
-
-
+![Alt text](images/Wizarding.mp4 "Video")
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
