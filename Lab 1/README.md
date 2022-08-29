@@ -106,7 +106,9 @@ I think that the instructions were unclear and people were struggling to underst
 
 ## Part D. Wizard the device
 
-![Alt text](images/Wizarding.mp4 "Video")
+
+https://user-images.githubusercontent.com/49267393/187288476-2695ba02-35a0-4e24-af1a-6800f36536c4.mp4
+
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
@@ -123,6 +125,7 @@ It has a keychain hanger on the top so that you can don't lose it.
 
 
 ## Part F. Record
+
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
