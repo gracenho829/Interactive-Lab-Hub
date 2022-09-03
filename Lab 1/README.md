@@ -81,6 +81,9 @@ _Goals:_ There are two ulterior goals for this device. The first is to check and
 ![Alt text](images/storyboard8.JPG "Storyboard8")
 ![Alt text](images/storyboard9.JPG "Storyboard9")
 ![Alt text](images/storyboard10.JPG "Storyboard10")
+![Alt text](images/storyboard-11.jpeg "Storyboard11")
+![Alt text](images/storyboard-12.jpeg "Storyboard12")
+![Alt text](images/storyboard-13.jpeg "Storyboard13")
 
 
 **Feedback**
