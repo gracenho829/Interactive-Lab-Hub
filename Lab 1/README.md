@@ -130,7 +130,8 @@ It has a keychain hanger on the top so that you can don't lose it.
 ## Part F. Record
 
 
-\*\***Take a video of your prototyped interaction.**\*\*
+
+https://user-images.githubusercontent.com/49267393/187292992-80777550-b584-4865-b0bf-361961a84021.mp4
 
 
 
