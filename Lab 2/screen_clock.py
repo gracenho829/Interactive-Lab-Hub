@@ -29,6 +29,14 @@ disp = st7789.ST7789(
     y_offset=40,
 )
 
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
 height = disp.width  # we swap height/width to rotate it to landscape!
@@ -54,20 +62,25 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+x =0
+y = top
 
-# Turn on the backlight
-backlight = digitalio.DigitalInOut(board.D22)
-backlight.switch_to_output()
-backlight.value = True
+userDate = input('Type the name of a color and hit enter: ')
+
 
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    x =0
     y = top
+    header = "Current Date & Time"
+    draw.text((x,y), header, font = font, fill="#FFFFFF")
+    y += font.getsize(header)[1] *2
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+
     currentTime = time.strftime("%m/%d/%Y %H:%M:%S")
     draw.text((x, y), currentTime, font=font, fill="#FFFFFF")
+    y += font.getsize(header)[1]
+    draw.ellipse((x,y,10,10), fill="yellow")
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
