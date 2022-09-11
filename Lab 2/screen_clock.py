@@ -1,9 +1,11 @@
 import time
+from datetime import date, timedelta
 import subprocess
 import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+from adafruit_rgb_display.rgb import color565
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -61,26 +63,31 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 30)
 x =0
 y = top
-
-userDate = input('Type the name of a color and hit enter: ')
-
-
+title = "Relapse Clock!"
+draw.text((x,y), title, font = font, fill="#FFFFFF")
+disp.image(image, rotation)
+userDate = input('How many days do you wish to stay drug-free?: ')
+disp.fill(color565(10, 120, 17))  
+time.sleep(1)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     y = top
-    header = "Current Date & Time"
-    draw.text((x,y), header, font = font, fill="#FFFFFF")
-    y += font.getsize(header)[1] *2
-    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    draw.text((x,y), userDate, font = font, fill="#FFFFFF")
+    y += font.getsize(userDate)[1] *2
+    currentTime = time.strftime("%m/%d/%Y")
+    d0 = date.today()
+    d1 = d0 + timedelta(days=int(userDate))
+    deadlineTime = d1.strftime("%m/%d/%Y")
+    draw.text((x, y), "Current   " + currentTime, font=font, fill="#FFFFFF")
+    y += font.getsize(userDate)[1]*2
+    draw.text((x, y), "Deadline   " + deadlineTime, font=font, fill="#FFFFFF")
+    y += font.getsize(userDate)[1]
 
-    currentTime = time.strftime("%m/%d/%Y %H:%M:%S")
-    draw.text((x, y), currentTime, font=font, fill="#FFFFFF")
-    y += font.getsize(header)[1]
-    draw.ellipse((x,y,10,10), fill="yellow")
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
