@@ -129,7 +129,7 @@ while True:
     #draw.text((x, y), "Current   " + currentTime, font=font, fill="#FFFFFF")
     d0 = date.today()
     d1 = d0 + timedelta(days=int(userDate))
-    deadlineTime = d1.strftime("%m/%d/%Y")
+    deadlineTime = d1.strftime("%m/%d/%Y Days Left")
     draw.text((x, y), "Finish Date:   " + deadlineTime, font=font, fill="#000000")
     y += font.getsize(userDate)[1]
     image.save('sample-out.jpg')
