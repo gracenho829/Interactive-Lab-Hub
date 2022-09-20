@@ -207,7 +207,10 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 
 
-https://user-images.githubusercontent.com/49267393/189797027-2c29523d-5dda-4ea5-85ec-1b5810a2e14c.mp4
+
+
+https://user-images.githubusercontent.com/49267393/191149053-0be20f1c-6099-4c2e-aa4e-3d606e5bdfb4.mp4
+
 
 
 
