@@ -103,6 +103,7 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 headerFont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 30)
+coinFont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
 x =0
 y = top
 title = "Relapse Clock!"
@@ -115,6 +116,7 @@ font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 image = Image.open("images/plants/sprout.png")
 
 index = 0
+coins = 1000
 
 while True:
     # Resize Image
@@ -123,22 +125,28 @@ while True:
     image = openImage(getURL)
     draw = ImageDraw.Draw(image)
     y = top
-    draw.text((x,y), userDate, font = headerFont, fill="#000000")
-    y += font.getsize(userDate)[1]*6
+    y += font.getsize(userDate)[1]*1
+    draw.text((x,y), "Coins : " + str(coins), font = coinFont, fill="#000000")
+    y += font.getsize(userDate)[1]*2
+    draw.text((x,y), userDate + " Days Left", font = headerFont, fill="#000000")
+    y += font.getsize(userDate)[1]*3
     #currentTime = time.strftime("%m/%d/%Y")
     #draw.text((x, y), "Current   " + currentTime, font=font, fill="#FFFFFF")
     d0 = date.today()
     d1 = d0 + timedelta(days=int(userDate))
-    deadlineTime = d1.strftime("%m/%d/%Y Days Left")
+    deadlineTime = d1.strftime("%m/%d/%Y")
     draw.text((x, y), "Finish Date:   " + deadlineTime, font=font, fill="#000000")
     y += font.getsize(userDate)[1]
     image.save('sample-out.jpg')
     # Display image.
     disp.image(image, rotation)
    
-    if buttonB.value and not buttonA.value:  # just button A pressed
-        index += 1 # set the screen to the users color
+    if buttonB.value and not buttonA.value:
+        if coins >= 100:
+            coins -= 100  # just button A pressed
+            index += 1# set the screen to the users color
     if buttonA.value and not buttonB.value:  # just button B pressed
+        coins = 0
         index = 0  # set the screen to white
 
 
