@@ -155,3 +155,12 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+I tried to get feedback, but they were all positive.
+In order to enhance some features, I tried to think of scenarios where I would feel frustrated if I was a parent or the patient.
+
+This helped, and so I added more features. (Storyboard 11- 13) 
+
+One feature that i found that could use the interaction better was if you could set the threshold. 
+This would notify the doctors, the patients, and the parents without having them worry constantly about it .
+
+This was just an added entry. The scene is still implemented quite well in the video so I did not retake it. 
