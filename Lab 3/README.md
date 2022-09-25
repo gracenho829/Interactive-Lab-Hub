@@ -29,7 +29,7 @@ pi@ixe00:~/Interactive-Lab-Hub $ git push
 Option 2: On your your own GitHub repo, [create pull request](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md) to get updates from the class Interactive-Lab-Hub. After you have latest updates online, go on your Pi, `cd` to your `Interactive-Lab-Hub` and use `git pull` to get updates from your own GitHub repo.
 
 ## Part 1.
-
+d
 ### Text to Speech 
 
 In this part of lab, we are going to start peeking into the world of audio on your Pi! 
