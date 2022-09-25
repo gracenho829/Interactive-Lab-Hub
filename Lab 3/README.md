@@ -112,6 +112,26 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
+To imagine the dialogue, I had to rely on my experience with Siri. I've never used any other speech-enabled device for one reason: they can get inacurate and it frustrates me. Sometimes, it's even easier to do it by hand. This accumulation of bad UX has made it so that I don't use speech-enabled devices often. 
+
+https://www.youtube.com/watch?v=gNx0huL9qsQ&ab_channel=WIRED
+
+This is the link that I used to look at all three main speech-enabled devices : Siri, Alexa, and Google Home. 
+
+In Korea, we also use something called "Genie."
+
+When I came up with the dialogue and the idea, I wanted a simplified process where 
+1. The idea is unique enough
+2. It could solve a potential problem or add a unique feature to our lives.
+3. The process is simple and straightforward so people do not have to ask unnecessary questions and it would be easy to predict what the user wanted. 
+
+The following dialogues are what I came up with on the spot. 
+
+![Alt text](images/3-5.jpg "PostIts")
+![Alt text](images/3-6.jpg "PostIts")
+![Alt text](images/3-7.jpg "Postists3")
+
+Of course there will be more variations of this dialogue, but these are the main dialogues that I believe would be used. 
 \*\***Please describe and document your process.**\*\*
 
 ### Acting out the dialogue
