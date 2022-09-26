@@ -140,10 +140,21 @@ Find a partner, and *without sharing the script with your partner* try out the d
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
+https://user-images.githubusercontent.com/49267393/192364782-d1d19c4b-9aec-4036-bf68-2dc9e3c90b5d.mp4
+
+The dialogue was much more simpler than I imagined. 
+Maybe it was because I expected that they would try more features, but they stuck to one feature that they needed and used that one. (Filmed multiple times, used one feature constantly) 
+This gives me a lot of insight to how users use an actual product. 
+They may use one feature constantly rather than try to use othe features.
+As a product designer, it should be then that I work on refining and putting more effort into features that users use most.
+
+
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+
+
 
 # Lab 3 Part 2
 
