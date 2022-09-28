@@ -132,6 +132,7 @@ The following dialogues are what I came up with on the spot.
 ![Alt text](images/3-7.jpg "Postists3")
 
 Of course there will be more variations of this dialogue, but these are the main dialogues that I believe would be used. 
+
 \*\***Please describe and document your process.**\*\*
 
 ### Acting out the dialogue
