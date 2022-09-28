@@ -81,9 +81,6 @@ _Goals:_ There are two ulterior goals for this device. The first is to check and
 ![Alt text](images/storyboard8.JPG "Storyboard8")
 ![Alt text](images/storyboard9.JPG "Storyboard9")
 ![Alt text](images/storyboard10.JPG "Storyboard10")
-![Alt text](images/storyboard-11.jpeg "Storyboard11")
-![Alt text](images/storyboard-12.jpeg "Storyboard12")
-![Alt text](images/storyboard-13.jpeg "Storyboard13")
 
 
 **Feedback**
@@ -145,22 +142,18 @@ This describes the second week's work for this lab activity.
 
 You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
-\*\***Summarize feedback from your partners here.**\*\*
+**Received Feedback** 
 
-## Make it your own
+The feedback I received were all positive.
+So in order to enhance some features, I had to talk with my mom and my sister. 
 
-Do last week’s assignment again, but this time: 
-1) It doesn’t have to (just) use light, 
-2) You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative! Feel free to fork and modify the tinkerbell code! 
-3) We will be grading with an emphasis on creativity. 
+The reason why I got feedback frmo these two people are because they are the ones who were directly affected by this. 
 
-\*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
-I tried to get feedback, but they were all positive.
-In order to enhance some features, I tried to think of scenarios where I would feel frustrated if I was a parent or the patient.
+One thing that my mom was always scared of was not being able to reach my sister on time, when she has unprecedented spasms or strokes. 
 
-This helped, and so I added more features. (Storyboard 11- 13) 
+She thought that a good feature to add was if the device alerted the guardian, doctor, and the patient when sugar levels/brain waves hormones are at abnormal levels
 
-One feature that i found that could use the interaction better was if you could set the threshold. 
-This would notify the doctors, the patients, and the parents without having them worry constantly about it .
+![Alt text](images/storyboard-11.jpeg "Storyboard11")
+![Alt text](images/storyboard-12.jpeg "Storyboard12")
+![Alt text](images/storyboard-13.jpeg "Storyboard13")
 
-This was just an added entry. The scene is still implemented quite well in the video so I did not retake it. 
