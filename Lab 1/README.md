@@ -157,3 +157,16 @@ She thought that a good feature to add was if the device alerted the guardian, d
 ![Alt text](images/storyboard-12.jpeg "Storyboard12")
 ![Alt text](images/storyboard-13.jpeg "Storyboard13")
 
+**Video** 
+
+In order to enact the following storyboard scenes, I had to set up the iPad and the desktop. 
+
+/ include photo of iPad and desktop /
+
+I had my roommate act as the parent and I acted out the role of the doctor. 
+
+Through this I was able to discover that, it wouldn't be wise for the parent to set the threshold. 
+
+It would be better for the doctor to automatically set up a threshold that would contact the mom and the doctor right away. 
+
+And so the doctor could keep track when conditions were severe. 
