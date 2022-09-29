@@ -29,7 +29,7 @@ pi@ixe00:~/Interactive-Lab-Hub $ git push
 Option 2: On your your own GitHub repo, [create pull request](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md) to get updates from the class Interactive-Lab-Hub. After you have latest updates online, go on your Pi, `cd` to your `Interactive-Lab-Hub` and use `git pull` to get updates from your own GitHub repo.
 
 ## Part 1.
-d
+
 ### Text to Speech 
 
 In this part of lab, we are going to start peeking into the world of audio on your Pi! 
@@ -122,7 +122,32 @@ In the [demo directory](./demo), you will find an example Wizard of Oz project. 
 
 # Lab 3 Part 2
 
-For Part 2, you will redesign the interaction with the speech-enabled device using the data collected, as well as feedback from part 1.
+**Feedback from Heather**
+ 
+"Yours is pretty much good enough. The only thing I can think of more is that you can add some extra feature? Like randomly pick a recommended song or something"
+
+**Feedback from Phil** 
+
+"Maybe you can recommend playlist or the device can tailor the playlist to the user's preference. For example, concerts,genre, artist, etc."
+
+**Feedback from Eden**
+"What if I hate a song? I want to delete it from my playlist."
+
+
+### Feaures to implement 
+1. Deleting a song 
+    a. Only allow users who uploaded the song to the queue to delete it.
+    b. If you don't like it, the device will make sure to remove the song from only your playlist. 
+2. Recommend playlists
+    a. Because this is a voice-activated device, it will be hard to recommend different playlists. Instead, this device will tailor one playlist every day to your taste.
+3. Play a random song based on your location. 
+    a. The device can also recommend music based on your location. It can recommend a song that was most recently played on the spot or recommend a song that was most played in the area. 
+    b. You can also "drop a song." When you drop a song, someone can come and "pick it up" 
+4. Use lights to indicate when to talk. 
+
+### Added storyboards 
+
+
 
 ## Prep for Part 2
 
