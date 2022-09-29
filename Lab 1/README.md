@@ -165,6 +165,7 @@ In order to enact the following storyboard scenes, I had to set up the iPad and 
 After setting up the environment, i realized that it would be better to make an interface for the doctor and the mother. This would allow more intuitive communication between mother and doctor.
 
 I quickly set up a Figma rough wireframe / low-fidelity prototype that would illustrate the app. 
+
 ![Alt text](images/Figma.png "Figma")
 
 Here is the finished reenactment
