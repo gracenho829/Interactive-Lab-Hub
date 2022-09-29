@@ -184,6 +184,9 @@ In the [demo directory](./demo), you will find an example Wizard of Oz project. 
 
 ### Added storyboards 
 
+![Alt text](images/part2-1.jpeg "More storyboards")
+![Alt text](images/part2-2.jpeg "More storyboards")
+![Alt text](images/part2-3.jpeg "More storyboards")
 
 
 ## Prep for Part 2
