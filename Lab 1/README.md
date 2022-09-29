@@ -161,12 +161,15 @@ She thought that a good feature to add was if the device alerted the guardian, d
 
 In order to enact the following storyboard scenes, I had to set up the iPad and the desktop. 
 
-/ include photo of iPad and desktop /
 
-I had my roommate act as the parent and I acted out the role of the doctor. 
+After setting up the environment, i realized that it would be better to make an interface for the doctor and the mother. This would allow more intuitive communication between mother and doctor.
 
-Through this I was able to discover that, it wouldn't be wise for the parent to set the threshold. 
+I quickly set up a Figma rough wireframe / low-fidelity prototype that would illustrate the app. 
+![Alt text](images/Figma.png "Figma")
 
-It would be better for the doctor to automatically set up a threshold that would contact the mom and the doctor right away. 
+Here is the finished reenactment
 
-And so the doctor could keep track when conditions were severe. 
+
+
+
+
