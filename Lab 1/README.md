@@ -81,9 +81,6 @@ _Goals:_ There are two ulterior goals for this device. The first is to check and
 ![Alt text](images/storyboard8.JPG "Storyboard8")
 ![Alt text](images/storyboard9.JPG "Storyboard9")
 ![Alt text](images/storyboard10.JPG "Storyboard10")
-![Alt text](images/storyboard-11.jpeg "Storyboard11")
-![Alt text](images/storyboard-12.jpeg "Storyboard12")
-![Alt text](images/storyboard-13.jpeg "Storyboard13")
 
 
 **Feedback**
@@ -145,13 +142,40 @@ This describes the second week's work for this lab activity.
 
 You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
-\*\***Summarize feedback from your partners here.**\*\*
+**Received Feedback** 
 
-## Make it your own
+The feedback I received were all positive.
+So in order to enhance some features, I had to talk with my mom and my sister. 
 
-Do last week’s assignment again, but this time: 
-1) It doesn’t have to (just) use light, 
-2) You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative! Feel free to fork and modify the tinkerbell code! 
-3) We will be grading with an emphasis on creativity. 
+The reason why I got feedback frmo these two people are because they are the ones who were directly affected by this. 
 
-\*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+One thing that my mom was always scared of was not being able to reach my sister on time, when she has unprecedented spasms or strokes. 
+
+She thought that a good feature to add was if the device alerted the guardian, doctor, and the patient when sugar levels/brain waves hormones are at abnormal levels
+
+![Alt text](images/storyboard-11.jpeg "Storyboard11")
+![Alt text](images/storyboard-12.jpeg "Storyboard12")
+![Alt text](images/storyboard-13.jpeg "Storyboard13")
+
+**Video** 
+
+In order to enact the following storyboard scenes, I had to set up the iPad and the desktop. 
+
+
+After setting up the environment, i realized that it would be better to make an interface for the doctor and the mother. This would allow more intuitive communication between mother and doctor.
+
+I quickly set up a Figma rough wireframe / low-fidelity prototype that would illustrate the app. 
+
+![Alt text](images/Figma.png "Figma")
+
+Here is the finished reenactment
+
+
+
+
+
+https://user-images.githubusercontent.com/49267393/192922296-3cb9693e-4bed-46da-9a6a-bb18823742b7.mp4
+
+
+
+

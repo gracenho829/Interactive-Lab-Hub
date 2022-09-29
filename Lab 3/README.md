@@ -103,9 +103,35 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
+![Alt text](images/3-1.jpg "Storyboard1")
+![Alt text](images/3-2.jpg "Storyboard2")
+![Alt text](images/3-3.jpg "Storyboard3")
+![Alt text](images/3-4.jpg "Storyboard4")
+
 \*\***Post your storyboard and diagram here.**\*\*
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
+
+To imagine the dialogue, I had to rely on my experience with Siri. I've never used any other speech-enabled device for one reason: they can get inacurate and it frustrates me. Sometimes, it's even easier to do it by hand. This accumulation of bad UX has made it so that I don't use speech-enabled devices often. 
+
+https://www.youtube.com/watch?v=gNx0huL9qsQ&ab_channel=WIRED
+
+This is the link that I used to look at all three main speech-enabled devices : Siri, Alexa, and Google Home. 
+
+In Korea, we also use something called "Genie."
+
+When I came up with the dialogue and the idea, I wanted a simplified process where 
+1. The idea is unique enough
+2. It could solve a potential problem or add a unique feature to our lives.
+3. The process is simple and straightforward so people do not have to ask unnecessary questions and it would be easy to predict what the user wanted. 
+
+The following dialogues are what I came up with on the spot. 
+
+![Alt text](images/3-5.jpg "PostIts")
+![Alt text](images/3-6.jpg "PostIts")
+![Alt text](images/3-7.jpg "Postists3")
+
+Of course there will be more variations of this dialogue, but these are the main dialogues that I believe would be used. 
 
 \*\***Please describe and document your process.**\*\*
 
@@ -115,10 +141,21 @@ Find a partner, and *without sharing the script with your partner* try out the d
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
+https://user-images.githubusercontent.com/49267393/192364782-d1d19c4b-9aec-4036-bf68-2dc9e3c90b5d.mp4
+
+The dialogue was much more simpler than I imagined. 
+Maybe it was because I expected that they would try more features, but they stuck to one feature that they needed and used that one. (Filmed multiple times, used one feature constantly) 
+This gives me a lot of insight to how users use an actual product. 
+They may use one feature constantly rather than try to use othe features.
+As a product designer, it should be then that I work on refining and putting more effort into features that users use most.
+
+
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+
+
 
 # Lab 3 Part 2
 
