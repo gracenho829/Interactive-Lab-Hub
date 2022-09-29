@@ -159,6 +159,30 @@ In the [demo directory](./demo), you will find an example Wizard of Oz project. 
 
 # Lab 3 Part 2
 
+**Feedback from Heather**
+ 
+"Yours is pretty much good enough. The only thing I can think of more is that you can add some extra feature? Like randomly pick a recommended song or something"
+
+**Feedback from Phil** 
+
+"Maybe you can recommend playlist or the device can tailor the playlist to the user's preference. For example, concerts,genre, artist, etc."
+
+**Feedback from Eden**
+"What if I hate a song? I want to delete it from my playlist."
+
+
+### Feaures to implement 
+1. Deleting a song 
+    a. Only allow users who uploaded the song to the queue to delete it.
+    b. If you don't like it, the device will make sure to remove the song from only your playlist. 
+2. Recommend playlists
+    a. Because this is a voice-activated device, it will be hard to recommend different playlists. Instead, this device will tailor one playlist every day to your taste.
+3. Play a random song based on your location. 
+    a. The device can also recommend music based on your location. It can recommend a song that was most recently played on the spot or recommend a song that was most played in the area. 
+    b. You can also "drop a song." When you drop a song, someone can come and "pick it up" 
+4. Use lights to indicate when to talk. 
+
+### Added storyboards 
 
 
 
