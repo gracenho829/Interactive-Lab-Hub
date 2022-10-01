@@ -189,12 +189,6 @@ In the [demo directory](./demo), you will find an example Wizard of Oz project. 
 ![Alt text](images/part2-3.jpeg "More storyboards")
 
 
-## Prep for Part 2
-
-1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-3. Make a new storyboard, diagram and/or script based on these reflections.
-
 ## Prototype your system
 
 The system should:
@@ -202,17 +196,34 @@ The system should:
 * use one or more sensors
 * require participants to speak to it. 
 
-*Document how the system works*
-
 *Include videos or screencaptures of both the system and the controller.*
+
+For me, the controller decided not to work at the last minute (was working fine during lab,, ), and so I had to come up with manual script files to test my product.
+
+![Alt text](images/listoffiles.png "Files")
+
+Here are a list of 7 scripts that I made to interact with the user. 
+
+The steps for this device is as follows : 
+1. Speak into the microphone to do a certain task. This could be to add a song,push a song to a queue, play a song, send a song out to a person, delete a song, etc.  
+2. The device will check with you if it got the right song.
+3. Then the device will flash a green light for you to indicate that you can talk. 
+4. The user would start talking. 
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
+I got a total of four people to use my device. 
+I gave them one task : add a song to a queue. 
+
+This was the responses of the users. 
+
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+The interaction was pretty simple. People got the gist of it pretty quickly.
+
 
 ### What worked well about the controller and what didn't?
 
@@ -226,4 +237,3 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
-
