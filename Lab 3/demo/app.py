@@ -23,7 +23,7 @@ i2c = busio.I2C(board.SCL, board.SDA)
 msa = MSA311(i2c)
 
 hostname = socket.gethostname()
-hardware = 'plughw:2,0'
+hardware = 'webcamproduct: USB Audio (hw:2,0)'
 
 app = Flask(__name__)
 socketio = SocketIO(app)
@@ -59,5 +59,3 @@ signal.signal(signal.SIGINT, signal_handler)
 
 if __name__ == "__main__":
     socketio.run(app, host='0.0.0.0', port=5000)
-
-

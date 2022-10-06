@@ -29,7 +29,7 @@ pi@ixe00:~/Interactive-Lab-Hub $ git push
 Option 2: On your your own GitHub repo, [create pull request](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md) to get updates from the class Interactive-Lab-Hub. After you have latest updates online, go on your Pi, `cd` to your `Interactive-Lab-Hub` and use `git pull` to get updates from your own GitHub repo.
 
 ## Part 1.
-d
+
 ### Text to Speech 
 
 In this part of lab, we are going to start peeking into the world of audio on your Pi! 
@@ -159,13 +159,35 @@ In the [demo directory](./demo), you will find an example Wizard of Oz project. 
 
 # Lab 3 Part 2
 
-For Part 2, you will redesign the interaction with the speech-enabled device using the data collected, as well as feedback from part 1.
+**Feedback from Heather**
+ 
+"Yours is pretty much good enough. The only thing I can think of more is that you can add some extra feature? Like randomly pick a recommended song or something"
 
-## Prep for Part 2
+**Feedback from Phil** 
 
-1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
-3. Make a new storyboard, diagram and/or script based on these reflections.
+"Maybe you can recommend playlist or the device can tailor the playlist to the user's preference. For example, concerts,genre, artist, etc."
+
+**Feedback from Eden**
+"What if I hate a song? I want to delete it from my playlist."
+
+
+### Feaures to implement 
+1. Deleting a song 
+    a. Only allow users who uploaded the song to the queue to delete it.
+    b. If you don't like it, the device will make sure to remove the song from only your playlist. 
+2. Recommend playlists
+    a. Because this is a voice-activated device, it will be hard to recommend different playlists. Instead, this device will tailor one playlist every day to your taste.
+3. Play a random song based on your location. 
+    a. The device can also recommend music based on your location. It can recommend a song that was most recently played on the spot or recommend a song that was most played in the area. 
+    b. You can also "drop a song." When you drop a song, someone can come and "pick it up" 
+4. Use lights to indicate when to talk. 
+
+### Added storyboards 
+
+![Alt text](images/part2-1.jpeg "More storyboards")
+![Alt text](images/part2-2.jpeg "More storyboards")
+![Alt text](images/part2-3.jpeg "More storyboards")
+
 
 ## Prototype your system
 
@@ -174,28 +196,67 @@ The system should:
 * use one or more sensors
 * require participants to speak to it. 
 
-*Document how the system works*
-
 *Include videos or screencaptures of both the system and the controller.*
 
+For me, the controller decided not to work at the last minute (was working fine during lab,, ), and so I had to come up with manual script files to test my product.
+
+![Alt text](images/listoffiles.png "Files")
+
+Here are a list of 7 scripts that I made to interact with the user. 
+
+The steps for this device is as follows : 
+1. Speak into the microphone to do a certain task. This could be to add a song,push a song to a queue, play a song, send a song out to a person, delete a song, etc.  
+2. The device will check with you if it got the right song.
+3. Then the device will flash a green light for you to indicate that you can talk. 
+4. The user would start talking. 
+
 ## Test the system
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
+Try to get at least two people to interact with your system.
+
+I got a total of four people to use my device. 
+I gave them one task : add a song to a queue. 
+
+This was the responses of the users. 
+
+
+https://user-images.githubusercontent.com/49267393/193430714-86664212-4975-48aa-954c-c9b2428e91bd.mp4
+
+=> Tried to find the song first before adding to the queue. 
+The participant also got confused on the timing to talk. 
+
+https://user-images.githubusercontent.com/49267393/193430719-66e41f9a-6249-4030-9bd4-066abb804ad5.mp4
+
+=> Went straight ahead and asked to add the song to queue. 
+
+https://user-images.githubusercontent.com/49267393/193430715-80ea4a4f-5c94-485e-9af7-6471d5958e5b.mp4
+
+=> Went straight ahead and asked to add the song to queue. 
+
+I did not get a recording of the fourth person, but to document her response: 
+she understood pretty quickly how to use the device. 
+However, she was confused what to do after the task ended. So she asked to play the song. 
 
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+The interaction was pretty simple. People got the gist of it pretty quickly.
+The first participant didn't ask to add first; it asked to find the song. 
+
+It would also be a good idea if I used a light sensor to indicate when to talk. 
+
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+The controller decided to malfunction at the last minute. (I could not find an alternative for the controller so I became the controller.) It was hard for me to control all the scripts. I had to remember, which script held which phrase. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
+People have a different way of processing the steps to get a certain task done. 
+While we may think people are quite straightforward, they may go through extra steps or skip certain steps. 
 
+They would need a good database of interaction in order to create a seamless interaction with the user. 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
-
+Like I mentioned above, I would definitely use the light sensor to indicate when to initiate conversation. 

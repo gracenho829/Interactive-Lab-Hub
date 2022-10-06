@@ -162,13 +162,19 @@ She thought that a good feature to add was if the device alerted the guardian, d
 In order to enact the following storyboard scenes, I had to set up the iPad and the desktop. 
 
 
-After setting up the environment, i realized that it would be better to make an interface for the doctor and the mother. This would allow more intuitive communication between mother and doctor.
+After setting up the environment, i realized that it would be better to make an interface for the doctor and the mother. This would allow more intuitive communication between mother and doctor.   
 
 I quickly set up a Figma rough wireframe / low-fidelity prototype that would illustrate the app. 
+
 ![Alt text](images/Figma.png "Figma")
 
 Here is the finished reenactment
 
+
+
+
+
+https://user-images.githubusercontent.com/49267393/192922296-3cb9693e-4bed-46da-9a6a-bb18823742b7.mp4
 
 
 
