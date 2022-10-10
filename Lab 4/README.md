@@ -223,16 +223,84 @@ Think about how you want to present the information about what your sensor is se
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+I will answer these two questions together. The reason for this is, I improved my design gradually (5 iterations for 5 designs) by asking these questions after each iteration.
+
+While I was thinking of an idea that I wanted to use for my Interactive Device. I realized that I desparately needed some coffee. 
+
+One thing I miss about Korea most is their $1 coffee drinks.
+& I also really miss being able to explore cafes. 
+
+Exploring cafes was something I was really passionate about, to the point where I would make blogs about recommended cafes or study places. 
+
+New York, although it is very accessible, lacks a great platform that recommends a good coffee place or a good place to study.
+
+I decided to come up with a cafe recommending system. 
+
+![Alt text](images/Materials.jpeg "Materials")
+
+I chose these three materials because I needed to have it complete the following functions. 
+
+1. Choose Distance
+2. Go through the recommendations
+3. Display the Recommendations. 
+
+I needed a sensor that could set the limit for how far the cafe can be to where I am. I did think of using a joystick or a distane sensor, but I thought that the most intuitive way to implement this was to use the Rotary encoder.
+This sensor gives the user the most control over deciding the limit.
+
+The joystick would be the best in going through the recommendations. If the display had touch sensors, then i would rethink the joystick, but because we don't have that option, I went with the joystick. 
+
+I chose the SparkFun Qwicc OLED because I liked the slick display.
+Nothing more, just the slick display.
+
+
+![Alt text](images/Sketch1.jpeg "Sketch1")
+
+Question 1 ) Love the cute design, but wouldn't the position of the rotary encoder and the joystick cause some difficulty in using it? 
+
+Answer: Yes. Create a separate cardboard interface for the joystick and the encoder. 
+
+Question 2) Do you think it would be a good idea to make this portable? 
+
+Answer: No. They might accidentally mess with the rotary encoder and the joystick. 
+
+![Alt text](images/Sketch2.jpeg "Sketch2")
+
+Question 1) Will the wires cause some physical difficulties ? 
+
+Answer : It will cause some difficulties in making the device easy to move. 
+
+Question 2) Is there a way to make this more presentable ? with the presence of wires, and other sensors.
+
+![Alt text](images/Sketch3.jpeg "Sketch3")
+
+Question 1) How thin is the box? Is it better to have a thin box or a thick box ? 
+
+Answer: It's best to have an appropriate width : not to thick and not to thin. 
+
+Question 2) Is the distance between the joystick and the rotary encoder put apart so that they don't make the UX experience difficult ? Would there be a better layout ? 
+
+
+![Alt text](images/Sketch4.jpeg "Sketch4")
+
+I still liked the coffee cutout better. & I also thought the layout would be better if the display was on the top of the two sensors.
+
+![Alt text](images/Sketch5.jpeg "Sketch5")
+
+
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+![Alt text](images/Sketch5.jpeg "Sketch5")
+
+Chosen display 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
-Build a cardbord prototype of your design.
+
+**\*\*\*Build a cardbord prototype of your design.\*\*\***
 
 **\*\*\*Document your rough prototype.\*\*\***
 
 
-LAB PART 2
+## LAB PART 2
 
 ### Part 2
 
