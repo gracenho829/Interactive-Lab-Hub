@@ -292,8 +292,18 @@ I still liked the coffee cutout better. & I also thought the layout would be bet
 ![Alt text](images/Sketch5.jpeg "Sketch5")
 
 Chosen display 
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
+When I designed this, I went through 5 iterations and decided that the last design was the most appropriate. 
+
+The reason for this is : 
+
+1. I wanted to explore with the laser cutter. So I didn't want a simple cardboard box. That is why I stuck with the coffee cup design. Plus, I think it's much cuter. 
+
+2. I wanted the display on top of the sensors. I thought that that would make the it easier for them to have the whole thing in one glance. 
+
+3. I separated the box that the sensors were placed. This was to make sure that the user doesnt touch the other sensor on accident.
 
 **\*\*\*Build a cardbord prototype of your design.\*\*\***
 
