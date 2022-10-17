@@ -325,7 +325,7 @@ The reason for this is :
 
 
 **\*\*\*Document your rough prototype.\*\*\***
-Before I build the prototype and the program, I first sat down with my roommates & friend and asked how they would like to use the recommendation program. 
+Before I built the prototype and the program, I first sat down with my roommates & friend and asked how they would like to use the recommendation program. 
 
 This conversation kind of sidetracked and went on to discuss about how it was kind of difficult to give simple gifts and coupons for a drink here in America. (It was much simpler in Korea. ) This kind of led to another idea of creating a coffee coupon device.
 
@@ -344,7 +344,26 @@ In order to answer this question, I tested out whether the user liked the encode
 Most of the users said that they prefer the encoder better
 
 
+https://user-images.githubusercontent.com/49267393/196066486-4902ae31-eee8-484a-acc1-9cc189d98eb4.MOV
+
+I decided to use the encoder to put in the code. 
+The users can press the encoder to signal that they selected a number
+
+The main problem now would be how to position the encoder.
+I wanted to use the "coupon-book" design so I cutout a cardboard
+
+
+https://user-images.githubusercontent.com/49267393/196067499-07ff58a2-832a-4635-a2d0-1f3739828cec.mov
+
+And then I cut out a piece of card board as the window for the device and I taped it to the back of the coupon-book.
+
+
+
 **\*\*\*Build a cardbord prototype of your design.\*\*\***
+
+
+
+https://user-images.githubusercontent.com/49267393/196067384-fab208b5-60d5-46da-a87c-6ed837a108e0.mov
 
 
 ## LAB PART 2
