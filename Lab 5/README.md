@@ -153,13 +153,6 @@ Using the microphone, try one of the following:
 You can use volumneSlow to set up threshold detections.
 I used this variable to detect the volume sounds and had it so that when it passed a certain threshold, it printed the volumne number to the screen
 
-
-https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-a69e-7e15f362ffe4.mp4
-
-
-
-**2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
-
 ```python
   while True:
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -174,6 +167,14 @@ https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-
             disp.image(image, rotation)
             time.sleep(0.1)
 ```
+
+https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-a69e-7e15f362ffe4.mp4
+
+
+
+**2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
+
+
 
 
 ### (Optional Reading) Introducing Additional Concepts
