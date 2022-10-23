@@ -150,7 +150,9 @@ Using the microphone, try one of the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
-
+You can use volumneSlow to set up threshold detections.
+I used this variable to detect the volume sounds and had it so that when it passed a certain threshold, it printed the volumne number to the screen
+![Alt text](images/IMG_7433.mp4 "Materials")
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
@@ -322,6 +324,7 @@ or the device physically falls and dismantles
 
 * How does X feel?
 => 
+
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
 ### Part 2.

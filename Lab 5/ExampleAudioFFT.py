@@ -101,12 +101,15 @@ def main():
     stream.start_stream()
     if True:
         while True:
-            drawText = "Today's sleeping habits"
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
-            y = top
-            draw.text((x, y), drawText, font=font, fill="#FFFFFF")
-            y += font.getsize(drawText)[1]
-            draw.text((x, y), "You snored. \n Severity : \n4.5 out of 10 \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+            if (volumneSlow > 100) :
+                drawText = "Today's sleeping habits"
+                draw.rectangle((0, 0, width, height), outline=0, fill=0)
+                y = top
+                draw.text((x, y), drawText + " \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+                y += font.getsize(drawText)[1]
+
+               ### draw.text((x, y), "You snored. \n Severity : \n4.5 out of 10 \n" + str(volumneSlow), font=font, fill="#FFFFFF")
             disp.image(image, rotation)
             time.sleep(0.1)
 
