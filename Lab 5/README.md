@@ -152,7 +152,12 @@ Using the microphone, try one of the following:
 
 You can use volumneSlow to set up threshold detections.
 I used this variable to detect the volume sounds and had it so that when it passed a certain threshold, it printed the volumne number to the screen
-![Alt text](images/IMG_7433.mp4 "Materials")
+
+
+https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-a69e-7e15f362ffe4.mp4
+
+
+
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
