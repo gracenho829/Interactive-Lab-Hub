@@ -160,16 +160,19 @@ https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-
 
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
-**3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
+```python
+  while True:
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)
+            if (volumneSlow > 100) :
+                drawText = "Today's sleeping habits"
+                draw.rectangle((0, 0, width, height), outline=0, fill=0)
+                y = top
+                draw.text((x, y), drawText + " \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+                y += font.getsize(drawText)[1]
 
-For technical references:
-
-* Volume Calculation with [RootMeanSqare](https://en.wikipedia.org/wiki/Root_mean_square)
-* [RingBuffer](https://en.wikipedia.org/wiki/Circular_buffer)
-* [Frequency Analysis](https://en.wikipedia.org/wiki/Fast_Fourier_transform)
-
-
-**\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
+               ### draw.text((x, y), "You snored. \n Severity : \n4.5 out of 10 \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+            disp.image(image, rotation)
+            time.sleep(0.1)
 
 
 
