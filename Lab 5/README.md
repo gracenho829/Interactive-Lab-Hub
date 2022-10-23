@@ -151,7 +151,6 @@ Using the microphone, try one of the following:
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
 
-
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?

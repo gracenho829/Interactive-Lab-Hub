@@ -60,7 +60,6 @@ def main():
 
                 volume = np.rint(np.sqrt(np.mean(buffer**2))*10000) # Compute the rms volume
                 
-                
                 VolumeHistory.append(volume)
                 volumneSlow = volume
                 volumechange = 0.0
