@@ -255,21 +255,42 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+![Alt text](images/contextualinteractiondesigntool.jpg "Materials")
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
+It does what it is supposed to do when it detects audio in the background noise. 
+
 1. When does it fail?
+It fails when there is too much noise in the background.
+It would be hard to distinguish between a snore and a car engine.
+
 1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+Because at the moment, we do not have any code that could distinguish the audio from the background, it would fail because it doesn't have the right code to distinguish between various different sounds. 
+
+1. Based on the behavior you have seen, what other scenarios could cause problems? 
+The rustling of the bed could also create unforeseen noises.
+We would have to set up an appropriate threshold that could distinguish just the
+sleep habits. 
+
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
+They would not be aware because they are sleeping.
+
+1. How bad would they be impacted by a misclassification?
+If the prototype gave out wrong results in respect to the sleeping habits, 
+they might get stressed and try to fix those sleeping habits. 
+
 1. How could change your interactive system to address this?
+I think the only way to address this problem is to create a good algorithm
+and set up a threshold so that it could detect the right sounds. 
+
 1. Are there optimizations you can try to do on your sense-making algorithm.
+Like mentioned in the previous question, optimize the threshold so that it may detect the right sounds
 
 ### Part D
 ### Characterize your own Observant system
@@ -277,13 +298,30 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
-* What is a good environment for X?
-* What is a bad environment for X?
-* When will X break?
-* When it breaks how will X break?
-* What are other properties/behaviors of X?
-* How does X feel?
+=> Detect sleeping habits 
+For now, it will detect if it has a sleeping habit.
+Better prototypes will be able to distinguish other habits as well. 
 
+* What is a good environment for X?
+=> A quiet bedroom with no noise
+
+* What is a bad environment for X?
+=> A bedroom in the city with a lot of noise (cars, people, etc.)
+
+* When will X break?
+=> If it runs out of battery or if the user accidentally knocks it out of 
+where the device is positioned in 
+
+* When it breaks how will X break?
+=> The device will break as it will not be able to detect noises as well 
+or the device physically falls and dismantles
+
+* What are other properties/behaviors of X?
+=> Detecting noises and displaying them on screen
+=> Blinking lights to indicate that the device is functioning properly 
+
+* How does X feel?
+=> 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
 ### Part 2.

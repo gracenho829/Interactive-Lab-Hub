@@ -3,10 +3,12 @@ import numpy as np
 from scipy.fft import rfft, rfftfreq
 from scipy.signal.windows import hann
 from numpy_ringbuffer import RingBuffer
-
-import queue
 import time
-
+import digitalio as dio
+import board
+from PIL import Image, ImageDraw, ImageFont
+import adafruit_rgb_display.st7789 as st7789
+import queue
 
 ## Please change the following number so that it matches to the microphone that you are using. 
 DEVICE_INDEX = 1
@@ -21,6 +23,60 @@ FORMAT=np.float32
 SAMPLING_RATE = 44100
 CHANNELS=1
 
+# Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
+cs_pin = dio.DigitalInOut(board.CE0)
+dc_pin = dio.DigitalInOut(board.D25)
+reset_pin = None
+
+# Config for display baudrate (default max is 24mhz):
+BAUDRATE = 64000000
+
+# Setup SPI bus using hardware SPI:
+spi = board.SPI()
+
+# Create the ST7789 display:
+disp = st7789.ST7789(
+    spi,
+    cs=cs_pin,
+    dc=dc_pin,
+    rst=reset_pin,
+    baudrate=BAUDRATE,
+    width=135,
+    height=240,
+    x_offset=53,
+    y_offset=40,
+)
+
+
+height = disp.width  # we swap height/width to rotate it to landscape!
+width = disp.height
+image = Image.new("RGB", (width, height))
+rotation = 90
+
+# Get drawing object to draw on image.
+draw = ImageDraw.Draw(image)
+
+# Draw a black filled box to clear the image.
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(image, rotation)
+# Draw some shapes.
+# First define some constants to allow easy resizing of shapes.
+padding = -2
+top = padding
+bottom = height - padding
+# Move left to right keeping track of the current x position for drawing shapes.
+x = 0
+
+
+# Alternatively load a TTF font.  Make sure the .ttf font file is in the
+# same directory as the python script!
+# Some other nice fonts to try: http://www.dafont.com/bitmap.php
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+bigFont = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 36)
+# Turn on the backlight
+backlight = dio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
 
 def main():
     ### Setting up all required software elements: 
@@ -40,11 +96,20 @@ def main():
     # Another example is the `VolumeHistory` ringbuffer. 
     VolumeHistory = RingBuffer(capacity=int(20/UPDATE_INTERVAL), dtype=FORMAT) ## This is how you can compute a history to record changes over time
     ### Here  is a good spot to extend other buffers as well that keeps track of variables over a certain period of time. 
-
+    volumneSlow = 0.0
     nextTimeStamp = time.time()
     stream.start_stream()
     if True:
         while True:
+            drawText = "Today's sleeping habits"
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)
+            y = top
+            draw.text((x, y), drawText, font=font, fill="#FFFFFF")
+            y += font.getsize(drawText)[1]
+            draw.text((x, y), "You snored. \n Severity : \n4.5 out of 10 \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+            disp.image(image, rotation)
+            time.sleep(0.1)
+
             frames = audioQueue.get() #Get DataFrom the audioDriver (see _callbackfunction how the data arrives)
             if not frames:
                 continue
