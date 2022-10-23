@@ -213,7 +213,7 @@ The steps for this device is as follows :
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
-I got a total of four people to use my device. 
+I got a total of three people to use my device. 
 I gave them one task : add a song to a queue. 
 
 This was the responses of the users. 
