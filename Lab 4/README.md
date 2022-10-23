@@ -3,7 +3,7 @@
 **NAMES OF COLLABORATORS HERE**
 
 
-For lab this week, we focus on both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
+For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
 ## Part 1 Lab Preparation
 
@@ -14,7 +14,7 @@ As always, pull updates from the class Interactive-Lab-Hub to both your Pi and y
 
 ```
 pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2021
+pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2022
 pi@ixe00:~/Interactive-Lab-Hub $ git add .
 pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab4 content"
 pi@ixe00:~/Interactive-Lab-Hub $ git push
@@ -153,9 +153,7 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joystick_Py) to learn more about the sensor!
 
-#### (Optional) Distance Sensor
-
-Note: We did not distribute this sensor to you, so if you are interested in playing with it, please come pick it up from the TA!
+#### Distance Sensor
 
 Earlier we have asked you to play with the proximity sensor, which is able to sense object within a short distance. Here, we offer [Qwiic Multi Distance Sensor](https://www.sparkfun.com/products/17072), which has a field of view of about 25° and is able to detect objects up to 3 meters away! 
 
@@ -177,10 +175,28 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+I wanted to use the rotary encoder and the joystick and the small sensor. (I wanted to utilize as much sensors as possible)
+
+![Alt text](images/Lab4-3.jpg "")
+![Alt text](images/Lab4-4.jpg """)
+
+More information and thoughts on sensor in the images. 
+
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+One thing is that the small sensors might be too small to display information.
+It would help if the screen was bigger to hold both the name of the coffee shop
+and the address so that they can visit it. 
+
+One other question is will the user actually need all three, would it just be better to have one sensor and one display ? If the user doesn't seem to use three sensors, I will just remove one and simplify the process.
+
 **\*\*\*Pick one of these designs to prototype.\*\*\***
+I think I'm going to use both joystick and rotary encoder and the screen.
+But if I cannot implement all three sensors, I'm going to use the rotary encoder & the screen. 
+
+It might actually be better to just use two instead of three.
+Because of complexity. But I will design sketches for three ensors.
 
 
 ### Part D
@@ -225,55 +241,179 @@ Think about how you want to present the information about what your sensor is se
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+I will answer these two questions together. The reason for this is, I improved my design gradually (5 iterations for 5 designs) by asking these questions after each iteration.
+
+While I was thinking of an idea that I wanted to use for my Interactive Device. I realized that I desparately needed some coffee. 
+
+One thing I miss about Korea most is their $1 coffee drinks.
+& I also really miss being able to explore cafes. 
+
+Exploring cafes was something I was really passionate about, to the point where I would make blogs about recommended cafes or study places. 
+
+New York, although it is very accessible, lacks a great platform that recommends a good coffee place or a good place to study.
+
+I decided to come up with a cafe recommending system. 
+
+![Alt text](images/Materials.jpeg "Materials")
+
+I chose these three materials because I needed to have it complete the following functions. 
+
+1. Choose Distance
+2. Go through the recommendations
+3. Display the Recommendations. 
+
+I needed a sensor that could set the limit for how far the cafe can be to where I am. I did think of using a joystick or a distane sensor, but I thought that the most intuitive way to implement this was to use the Rotary encoder.
+This sensor gives the user the most control over deciding the limit.
+
+The joystick would be the best in going through the recommendations. If the display had touch sensors, then i would rethink the joystick, but because we don't have that option, I went with the joystick. 
+
+I chose the SparkFun Qwicc OLED because I liked the slick display.
+Nothing more, just the slick display.
+
+
+![Alt text](images/Sketch1.jpeg "Sketch1")
+
+Question 1 ) Love the cute design, but wouldn't the position of the rotary encoder and the joystick cause some difficulty in using it? 
+
+Answer: Yes. Create a separate cardboard interface for the joystick and the encoder. 
+
+Question 2) Do you think it would be a good idea to make this portable? 
+
+Answer: No. They might accidentally mess with the rotary encoder and the joystick. 
+
+![Alt text](images/Sketch2.jpeg "Sketch2")
+
+Question 1) Will the wires cause some physical difficulties ? 
+
+Answer : It will cause some difficulties in making the device easy to move. 
+
+Question 2) Is there a way to make this more presentable ? with the presence of wires, and other sensors.
+
+![Alt text](images/Sketch3.jpeg "Sketch3")
+
+Question 1) How thin is the box? Is it better to have a thin box or a thick box ? 
+
+Answer: It's best to have an appropriate width : not to thick and not to thin. 
+
+Question 2) Is the distance between the joystick and the rotary encoder put apart so that they don't make the UX experience difficult ? Would there be a better layout ? 
+
+
+![Alt text](images/Sketch4.jpeg "Sketch4")
+
+I still liked the coffee cutout better. & I also thought the layout would be better if the display was on the top of the two sensors.
+
+![Alt text](images/Sketch5.jpeg "Sketch5")
+
+
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+
+![Alt text](images/Sketch5.jpeg "Sketch5")
+
+Chosen display 
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
-Build a cardbord prototype of your design.
+When I designed this, I went through 5 iterations and decided that the last design was the most appropriate. 
+
+The reason for this is : 
+
+1. I wanted to explore with the laser cutter. So I didn't want a simple cardboard box. That is why I stuck with the coffee cup design. Plus, I think it's much cuter. 
+
+2. I wanted the display on top of the sensors. I thought that that would make the it easier for them to have the whole thing in one glance. 
+
+3. I separated the box that the sensors were placed. This was to make sure that the user doesnt touch the other sensor on accident.
+
 
 **\*\*\*Document your rough prototype.\*\*\***
+Before I built the prototype and the program, I first sat down with my roommates & friend and asked how they would like to use the recommendation program. 
+
+This conversation kind of sidetracked and went on to discuss about how it was kind of difficult to give simple gifts and coupons for a drink here in America. (It was much simpler in Korea. ) This kind of led to another idea of creating a coffee coupon device.
+
+By using the joystick or the encoder, you can put in a secret code that would give you an exclusive coupon sent by the gift-er. 
+
+The questions that were raised was, do we need both the joystick and the encoder ? 
+Which sensor would be more useful ? 
+
+![Alt text](images/NewIdea.jpeg "Sketch5")
+
+In order to answer this question, I tested out whether the user liked the encoder or the joystick better
+
+![Alt text](images/IMG_7112.jpg "Sketch5")
+![Alt text](images/IMG_7113.jpg "Sketch5")
+
+Most of the users said that they prefer the encoder better
 
 
-LAB PART 2
+https://user-images.githubusercontent.com/49267393/196066486-4902ae31-eee8-484a-acc1-9cc189d98eb4.MOV
+
+I decided to use the encoder to put in the code. 
+The users can press the encoder to signal that they selected a number
+
+The main problem now would be how to position the encoder.
+Upon deciding whether I want to add a separate conttainer for the encoder, 
+I decided that it would be best ot put them together
+
+**\*\*\*Build a cardbord prototype of your design.\*\*\***
+I wanted to use the "coupon-book" design so I cutout a cardboard
+
+
+https://user-images.githubusercontent.com/49267393/196067499-07ff58a2-832a-4635-a2d0-1f3739828cec.mov
+
+And then I cut out a piece of card board as the window for the device and I taped it to the back of the coupon-book.
+![IMG_7118](https://user-images.githubusercontent.com/49267393/196068785-199582f4-acd0-468e-a37b-5f6734c0be79.jpg)
+
+I also attached two more sensors to the back of the coupon book. 
+My wires for some reason would not sense the sensor and the joystick was kind of useless, and so I did not actually prototype these two sensors.
+https://user-images.githubusercontent.com/49267393/196068788-10d978f3-27aa-41cf-a4fe-da1c894492a1.MOV
+
+Elaboration on what these two sensors do will be in Part 2
+
+
+
+
+
+## LAB PART 2
 
 ### Part 2
 
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design, reiterated below.
 
-### Part E (Optional)
-### Servo Control with Joystick
-
-In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which we will be distributing the battery packs in the class. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
-
-<img src="Servo_Setup.jpg" width="400"/>
-
-In this exercise, we will be using the nice [ServoKit library](https://learn.adafruit.com/16-channel-pwm-servo-driver/python-circuitpython) developed by Adafruit! We will continue to use the `circuitpython` virtual environment we created. Activate the virtual environment and make sure to install the latest required libraries by running:
-
-```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ pip3 install -r requirements.txt
-```
-
-A servo motor is a rotary actuator or linear actuator that allows for precise control of angular or linear position. The position of a servo motor is set by the width of an electrical pulse, that is, we can use PWM (pulse-width modulation) to set and control the servo motor position. You can read [this](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn a bit more about how exactly a servo motor works.
-
-Now that you have a basic idea of what a servo motor is, look into the script `qwiic_servo_example.py` we provide. In line 14, you should see that we have set up the min_pulse and max_pulse corresponding to the servo turning 0 - 180 degree. Try running the servo example code now and see what happens:
-
-```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 4 $ python servo_test.py
-```
-
-It is also possible to control the servo using the sensors mentioned in as in part A and part B, and/or from some of the buttons or parts included in your kit, the simplest way might be to chain Qwiic buttons to the other end of the Qwiic OLED. Like this:
-
-<p align="center"> <img src="chaining.png"  width="200" ></p>
-
-You can then call whichever control you like rather than setting a fixed value for the servo. For more information on controlling Qwiic devices, Sparkfun has several python examples, such as [this](https://learn.sparkfun.com/tutorials/qwiic-joystick-hookup-guide/all#python-examples).
-
-We encourage you to try using these controls, **while** paying particular attention to how the interaction changes depending on the position of the controls. For example, if you have your servo rotating a screen (or a piece of cardboard) from one position to another, what changes about the interaction if the control is on the same side of the screen, or the opposite side of the screen? Trying and retrying different configurations generally helps reveal what a design choice changes about the interaction -- _make sure to document what you tried_!
 
 ### Part F
 ### Record
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
+
+
+https://user-images.githubusercontent.com/49267393/196069033-6e162826-8d85-44bb-b09e-2fc3cb87d80c.MOV
+
+Because I am not talented in my handicraft, this video shows a very shabby attempt at creating "a coupon book"
+It should look like this drawing right here. 
+![IMG_4840AA564B3D-1](https://user-images.githubusercontent.com/49267393/196069247-ef729f59-676d-4411-acf7-109b6edf6d24.jpeg)
+
+While the current bookis extremely heavy, if I had the resources and the chance,I would cut down the book to a smaller size so that it would be more portable.
+
+
 * "Works like": shows what the device can do
+
+https://user-images.githubusercontent.com/49267393/196069033-6e162826-8d85-44bb-b09e-2fc3cb87d80c.MOV
+
+As this video illustrates, you can adjust the rotary encoder to put in the special code that the user has given you to access your coffee gift.
+What this part was supposed to do (before I realized that the joystick did not work) was that it would be able to shift through the different 
+coupons that you got from your friend. 
+
+![IMG_528C3C02648D-1](https://user-images.githubusercontent.com/49267393/196069546-3be8d259-d283-4dab-9ed3-1dea243cf311.jpeg)
+
 * "Acts like": shows how a person would interact with the device
+
+
+
+https://user-images.githubusercontent.com/49267393/196069867-57a833f7-a745-4313-942f-189c866131b7.mov
+
+
+
+Feedback from Maria:
+Besides the cardboard falling apart, the design is a cute approach, but I dont know if it's a comfortable user experience.
+t would be better if it was in a box or maybe drawer format where you can slide out the coupon book inside
 

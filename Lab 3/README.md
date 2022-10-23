@@ -211,29 +211,52 @@ The steps for this device is as follows :
 4. The user would start talking. 
 
 ## Test the system
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
+Try to get at least two people to interact with your system.
 
 I got a total of three people to use my device. 
 I gave them one task : add a song to a queue. 
 
 This was the responses of the users. 
 
+
+https://user-images.githubusercontent.com/49267393/193430714-86664212-4975-48aa-954c-c9b2428e91bd.mp4
+
+=> Tried to find the song first before adding to the queue. 
+The participant also got confused on the timing to talk. 
+
+https://user-images.githubusercontent.com/49267393/193430719-66e41f9a-6249-4030-9bd4-066abb804ad5.mp4
+
+=> Went straight ahead and asked to add the song to queue. 
+
+https://user-images.githubusercontent.com/49267393/193430715-80ea4a4f-5c94-485e-9af7-6471d5958e5b.mp4
+
+=> Went straight ahead and asked to add the song to queue. 
+
+I did not get a recording of the fourth person, but to document her response: 
+she understood pretty quickly how to use the device. 
+However, she was confused what to do after the task ended. So she asked to play the song. 
+
 Answer the following:
 
 ### What worked well about the system and what didn't?
 
 The interaction was pretty simple. People got the gist of it pretty quickly.
+The first participant didn't ask to add first; it asked to find the song. 
+
+It would also be a good idea if I used a light sensor to indicate when to talk. 
 
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+The controller decided to malfunction at the last minute. (I could not find an alternative for the controller so I became the controller.) It was hard for me to control all the scripts. I had to remember, which script held which phrase. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
+People have a different way of processing the steps to get a certain task done. 
+While we may think people are quite straightforward, they may go through extra steps or skip certain steps. 
 
+They would need a good database of interaction in order to create a seamless interaction with the user. 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+Like I mentioned above, I would definitely use the light sensor to indicate when to initiate conversation. 
