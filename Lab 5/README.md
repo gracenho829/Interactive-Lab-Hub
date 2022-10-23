@@ -264,6 +264,10 @@ This might take a while to get fully installed. After installation, connect your
 * Try out different interaction outputs and inputs.
 * Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
 
+What I did with the audio device was I set it up next to my bed.
+I placed it so that it could detect noise at a close distance.
+See images below for details on setup
+
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
 ![Alt text](images/contextualinteractiondesigntool.jpg "Materials")
