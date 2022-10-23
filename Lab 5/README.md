@@ -2,7 +2,6 @@
 
 **NAMES OF COLLABORATORS HERE**
 
-
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
 Your **observant device** could, for example, count items, find objects, recognize an event or continuously monitor a room.
 
@@ -11,8 +10,11 @@ This lab will help you think through the design of observant systems, particular
 ## Prep
 
 1. Spend about 10 Minutes doing the Listening exercise as described in [ListeningExercise.md](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/Fall2022/Lab%205/ListeningExercise.md)
+
 2.  Install VNC on your laptop if you have not yet done so. This lab will actually require you to run script on your Pi through VNC so that you can see the video stream. Please refer to the [prep for Lab 2](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/Fall2022/Lab%202/prep.md), we offered the instruction at the bottom.
+
 3.  Read about [OpenCV](https://opencv.org/about/), [MediaPipe](https://mediapipe.dev/), and [TeachableMachines](https://teachablemachine.withgoogle.com/).
+
 4.  Read Belloti, et al.'s [Making Sense of Sensing Systems: Five Questions for Designers and Researchers](https://www.cc.gatech.edu/~keith/pubs/chi2002-sensing.pdf).
 
 ### For the lab, you will need:
@@ -22,7 +24,7 @@ This lab will help you think through the design of observant systems, particular
 
 ### Deliverables for this lab are:
 1. Show pictures, videos of the "sense-making" algorithms you tried.
-1. Show the filledout answers for the Contextual Interaction Design Tool.
+1. Show the filled out answers for the Contextual Interaction Design Tool.
 1. Show a video of how you embed one of these algorithms into your observant system.
 1. Test, characterize your interactive device. Show faults in the detection and how the system handled it.
 
@@ -30,11 +32,8 @@ This lab will help you think through the design of observant systems, particular
 Building upon the paper-airplane metaphor (we're understanding the material of machine learning for design), here are the four sections of the lab activity:
 
 A) [Play](#part-a)
-
 B) [Fold](#part-b)
-
 C) [Flight test](#part-c)
-
 D) [Reflect](#part-d)
 
 ---
@@ -102,6 +101,30 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+![Alt text](images/contours.png "Materials")
+Contour Ideas: 
+
+Contours your face shape and gives you a beauty Youtuber you can follow based on the calculations of the contours on your face.
+
+![Alt text](images/facedetection.png "Materials")
+
+Like this, images
+![Alt text](images/faceCollage.jpg "Face Collage")
+
+Face Detection
+You can create a cool photo app where it detects faces and then it creates photo collages of the different face parts with other people who also used the app simultaneously. 
+
+![Alt text](images/optical%20flow%20.png "Materials")
+Optical Flow 
+You can use this to create drawings with your fingers in a VR setting. 
+Maybe you can use it to collaborate virtually with your teammates to ideate and prototype applications and services. 
+
+![Alt text](images/ojbect-detection%20.png "Materials")
+Object Detection
+Use object detection to look at the different ingredients inside a fridge.
+and then with that information, it can recommend recipes with the ingredients that you have inside the fridge. 
+
+
 #### Filtering, FFTs, and Time Series data. 
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU or Microphone data stream could create a simple activity classifier between walking, running, and standing.
 
@@ -127,6 +150,8 @@ Using the microphone, try one of the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
+
+
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
@@ -139,6 +164,8 @@ For technical references:
 
 
 **\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
+
+
 
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pi Image, so you can move onto part B.** However, you are welcome to try it on your personal computer. If this functionality is desirable for your lab or final project, we can help you get a different image running the last OS and version of python to make the following code work.

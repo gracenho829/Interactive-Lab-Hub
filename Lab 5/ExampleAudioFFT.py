@@ -33,14 +33,13 @@ def main():
 
     stream = pyaudio_instance.open(input=True,start=False,format=pyaudio.paFloat32,channels=CHANNELS,rate=SAMPLING_RATE,frames_per_buffer=int(SAMPLING_RATE/2),stream_callback=_callback,input_device_index=DEVICE_INDEX)
     
-    
     # One essential way to keep track of variables overtime is with a ringbuffer. 
     # As an example the `AudioBuffer` it stores always the last second of audio data. 
     AudioBuffer = RingBuffer(capacity=SAMPLING_RATE*1, dtype=FORMAT) # 1 second long buffer.
     
     # Another example is the `VolumeHistory` ringbuffer. 
     VolumeHistory = RingBuffer(capacity=int(20/UPDATE_INTERVAL), dtype=FORMAT) ## This is how you can compute a history to record changes over time
-    ### Here  is a good spot to extend other buffers  aswell that keeps track of varailbes over a certain period of time. 
+    ### Here  is a good spot to extend other buffers as well that keeps track of variables over a certain period of time. 
 
     nextTimeStamp = time.time()
     stream.start_stream()
@@ -54,11 +53,10 @@ def main():
             AudioBuffer.extend(framesData[0::CHANNELS]) #Pick one audio channel and fill the ringbuffer. 
             
             if(AudioBuffer.is_full and  # Waiting for the ringbuffer to be full at the beginning.
-                audioQueue.qsize()<2 and # Make sure there is not alot more new data that should be used. 
+                audioQueue.qsize()<2 and # Make sure there is not a lot more new data that should be used. 
                 time.time()>nextTimeStamp): # See `UPDATE_INTERVAL` above.
 
                 buffer  = np.array(AudioBuffer) #Get the last second of audio. 
-
 
                 volume = np.rint(np.sqrt(np.mean(buffer**2))*10000) # Compute the rms volume
                 
@@ -72,7 +70,6 @@ def main():
                     vold = np.array(VolumeHistory)[:VolumeHistory.maxlen-HalfLength].mean()
                     volumechange =vnew-vold
                     volumneSlow = np.array(VolumeHistory).mean()
-                
                 ## Computes the Frequency Foruier analysis on the Audio Signal.
                 N = buffer.shape[0] 
                 window = hann(N) 
@@ -88,12 +85,10 @@ def main():
                 2. Look up the volume in that bin:
                 amplitudes[FrequencyBin]
 
-
-                The example below does something similar, just in revers.
+                The example below does something similar, just in reverse.
                 It finds the loudest amplitued and its coresponding bin  with `argmax()`. 
                 The uses the index to look up the Freqeucny value.
                 '''
-
 
                 LoudestFrequency = frequencies[amplitudes.argmax()]
                 
