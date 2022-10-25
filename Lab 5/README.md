@@ -344,6 +344,11 @@ or the device physically falls and dismantles
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
+
+https://user-images.githubusercontent.com/49267393/197666659-b9f2172e-f6f9-4c3e-9c4d-c13057ab51e6.mov
+
+
+
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
