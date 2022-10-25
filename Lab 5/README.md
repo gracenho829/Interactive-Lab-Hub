@@ -172,11 +172,6 @@ https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-
 
 
 
-**2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
-
-
-
-
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pi Image, so you can move onto part B.** However, you are welcome to try it on your personal computer. If this functionality is desirable for your lab or final project, we can help you get a different image running the last OS and version of python to make the following code work.
 
@@ -262,11 +257,16 @@ This might take a while to get fully installed. After installation, connect your
 * Pick one of the models you have tried, and experiment with prototyping an interaction.
 * This can be as simple as the boat detector showen in a previous lecture from Nikolas Matelaro.
 * Try out different interaction outputs and inputs.
-* Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
+* Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.]
+
+(ThinkingThroughContextandInteraction.png)
 
 What I did with the audio device was I set it up next to my bed.
 I placed it so that it could detect noise at a close distance.
 See images below for details on setup
+
+![Alt text](images/stationed1.jpg "Materials")
+![Alt text](images/stationed2.jpg "Materials")
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
@@ -278,10 +278,14 @@ Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
 It does what it is supposed to do when it detects audio in the background noise. 
+If the audio also detects signs up coughing, wheezing, gagging, etc. then it would also be
+able to diagnose for sleep apnea.
 
 1. When does it fail?
 It fails when there is too much noise in the background.
 It would be hard to distinguish between a snore and a car engine.
+It would also need to have good algorithms so that it won't distinguish any other noise
+for wheezing or gagging for sleep apnea.
 
 1. When it fails, why does it fail?
 Because at the moment, we do not have any code that could distinguish the audio from the background, it would fail because it doesn't have the right code to distinguish between various different sounds. 
@@ -336,7 +340,7 @@ or the device physically falls and dismantles
 => Blinking lights to indicate that the device is functioning properly 
 
 * How does X feel?
-=> 
+=> I don't understand 
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
