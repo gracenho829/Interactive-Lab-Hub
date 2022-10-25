@@ -2,7 +2,6 @@
 
 **NAMES OF COLLABORATORS HERE**
 
-
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
 Your **observant device** could, for example, count items, find objects, recognize an event or continuously monitor a room.
 
@@ -10,9 +9,12 @@ This lab will help you think through the design of observant systems, particular
 
 ## Prep
 
-1. Spend about 10 Minutes doing the Listening exercise as described in ``ListeningExercise.md`` 
+1. Spend about 10 Minutes doing the Listening exercise as described in [ListeningExercise.md](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/Fall2022/Lab%205/ListeningExercise.md)
+
 2.  Install VNC on your laptop if you have not yet done so. This lab will actually require you to run script on your Pi through VNC so that you can see the video stream. Please refer to the [prep for Lab 2](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/Fall2022/Lab%202/prep.md), we offered the instruction at the bottom.
+
 3.  Read about [OpenCV](https://opencv.org/about/), [MediaPipe](https://mediapipe.dev/), and [TeachableMachines](https://teachablemachine.withgoogle.com/).
+
 4.  Read Belloti, et al.'s [Making Sense of Sensing Systems: Five Questions for Designers and Researchers](https://www.cc.gatech.edu/~keith/pubs/chi2002-sensing.pdf).
 
 ### For the lab, you will need:
@@ -22,7 +24,7 @@ This lab will help you think through the design of observant systems, particular
 
 ### Deliverables for this lab are:
 1. Show pictures, videos of the "sense-making" algorithms you tried.
-1. Show the filledout answers for the Contextual Interaction Design Tool.
+1. Show the filled out answers for the Contextual Interaction Design Tool.
 1. Show a video of how you embed one of these algorithms into your observant system.
 1. Test, characterize your interactive device. Show faults in the detection and how the system handled it.
 
@@ -30,11 +32,8 @@ This lab will help you think through the design of observant systems, particular
 Building upon the paper-airplane metaphor (we're understanding the material of machine learning for design), here are the four sections of the lab activity:
 
 A) [Play](#part-a)
-
 B) [Fold](#part-b)
-
 C) [Flight test](#part-c)
-
 D) [Reflect](#part-d)
 
 ---
@@ -102,21 +101,84 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
-#### Filtering, FFTs, and Time Series data. (optional)
-Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU data stream could create a simple activity classifier between walking, running, and standing.
+![Alt text](images/contours.png "Materials")
+Contour Ideas: 
 
-Using the accelerometer, try the following:
+Contours your face shape and gives you a beauty Youtuber you can follow based on the calculations of the contours on your face.
+
+![Alt text](images/facedetection.png "Materials")
+
+Like this, images
+![Alt text](images/faceCollage.jpg "Face Collage")
+
+Face Detection
+You can create a cool photo app where it detects faces and then it creates photo collages of the different face parts with other people who also used the app simultaneously. 
+
+![Alt text](images/optical%20flow%20.png "Materials")
+Optical Flow 
+You can use this to create drawings with your fingers in a VR setting. 
+Maybe you can use it to collaborate virtually with your teammates to ideate and prototype applications and services. 
+
+![Alt text](images/ojbect-detection%20.png "Materials")
+Object Detection
+Use object detection to look at the different ingredients inside a fridge.
+and then with that information, it can recommend recipes with the ingredients that you have inside the fridge. 
+
+
+#### Filtering, FFTs, and Time Series data. 
+Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU or Microphone data stream could create a simple activity classifier between walking, running, and standing.
+
+To get the microphone working we need to install two libraries. `PyAudio` to get the data from the microphone, `sciPy` to make data analysis easy, and the `numpy-ringbuffer` to keep track of the last ~1 second of audio. 
+Pyaudio needs to be installed with the following comand:
+``sudo apt install python3-pyaudio``
+SciPy is installed with 
+``sudo apt install python3-scipy`` 
+
+Lastly we need numpy-ringbuffer, to make continues data anlysis easier.
+``pip install numpy-ringbuffer``
+
+Now try the audio processing example:
+* Find what ID the micrpohone has with `python ListAvalibleAudioDevices.py`
+    Look for a device name that includes `USB` in the name.
+* Adjust the variable `DEVICE_INDEX` in the `ExampleAudioFFT.py` file.
+    See if you are getting results printed out from the microphone. Try to understand how the code works.
+    Then run the file by typing `python ExampleAudioFFT.py`
+
+
+
+Using the microphone, try one of the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
-**2. Set up averaging** Can you average your signal in N-sample blocks? N-sample running average?
+You can use volumneSlow to set up threshold detections.
+I used this variable to detect the volume sounds and had it so that when it passed a certain threshold, it printed the volumne number to the screen
 
-**3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
+```python
+  while True:
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)
+            if (volumneSlow > 100) :
+                drawText = "Today's sleeping habits"
+                draw.rectangle((0, 0, width, height), outline=0, fill=0)
+                y = top
+                draw.text((x, y), drawText + " \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+                y += font.getsize(drawText)[1]
 
-**\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
+               ### draw.text((x, y), "You snored. \n Severity : \n4.5 out of 10 \n" + str(volumneSlow), font=font, fill="#FFFFFF")
+            disp.image(image, rotation)
+            time.sleep(0.1)
+```
+
+https://user-images.githubusercontent.com/49267393/197420662-2633c7f7-798e-4aa9-a69e-7e15f362ffe4.mp4
+
+
+
+**2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
+
+
+
 
 ### (Optional Reading) Introducing Additional Concepts
-The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pis, so you can move onto part B.** However, you are welcome to try it on your personal computer. 
+The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pi Image, so you can move onto part B.** However, you are welcome to try it on your personal computer. If this functionality is desirable for your lab or final project, we can help you get a different image running the last OS and version of python to make the following code work.
 
 #### MediaPipe
 
@@ -202,23 +264,48 @@ This might take a while to get fully installed. After installation, connect your
 * Try out different interaction outputs and inputs.
 * Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
 
+What I did with the audio device was I set it up next to my bed.
+I placed it so that it could detect noise at a close distance.
+See images below for details on setup
+
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+![Alt text](images/contextualinteractiondesigntool.jpg "Materials")
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
+It does what it is supposed to do when it detects audio in the background noise. 
+
 1. When does it fail?
+It fails when there is too much noise in the background.
+It would be hard to distinguish between a snore and a car engine.
+
 1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+Because at the moment, we do not have any code that could distinguish the audio from the background, it would fail because it doesn't have the right code to distinguish between various different sounds. 
+
+1. Based on the behavior you have seen, what other scenarios could cause problems? 
+The rustling of the bed could also create unforeseen noises.
+We would have to set up an appropriate threshold that could distinguish just the
+sleep habits. 
+
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
+They would not be aware because they are sleeping.
+
+1. How bad would they be impacted by a misclassification?
+If the prototype gave out wrong results in respect to the sleeping habits, 
+they might get stressed and try to fix those sleeping habits. 
+
 1. How could change your interactive system to address this?
+I think the only way to address this problem is to create a good algorithm
+and set up a threshold so that it could detect the right sounds. 
+
 1. Are there optimizations you can try to do on your sense-making algorithm.
+Like mentioned in the previous question, optimize the threshold so that it may detect the right sounds
 
 ### Part D
 ### Characterize your own Observant system
@@ -226,12 +313,30 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+=> Detect sleeping habits 
+For now, it will detect if it has a sleeping habit.
+Better prototypes will be able to distinguish other habits as well. 
+
 * What is a good environment for X?
+=> A quiet bedroom with no noise
+
 * What is a bad environment for X?
+=> A bedroom in the city with a lot of noise (cars, people, etc.)
+
 * When will X break?
+=> If it runs out of battery or if the user accidentally knocks it out of 
+where the device is positioned in 
+
 * When it breaks how will X break?
+=> The device will break as it will not be able to detect noises as well 
+or the device physically falls and dismantles
+
 * What are other properties/behaviors of X?
+=> Detecting noises and displaying them on screen
+=> Blinking lights to indicate that the device is functioning properly 
+
 * How does X feel?
+=> 
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 

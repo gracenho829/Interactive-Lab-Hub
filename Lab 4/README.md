@@ -325,7 +325,7 @@ The reason for this is :
 
 
 **\*\*\*Document your rough prototype.\*\*\***
-Before I build the prototype and the program, I first sat down with my roommates & friend and asked how they would like to use the recommendation program. 
+Before I built the prototype and the program, I first sat down with my roommates & friend and asked how they would like to use the recommendation program. 
 
 This conversation kind of sidetracked and went on to discuss about how it was kind of difficult to give simple gifts and coupons for a drink here in America. (It was much simpler in Korea. ) This kind of led to another idea of creating a coffee coupon device.
 
@@ -344,7 +344,32 @@ In order to answer this question, I tested out whether the user liked the encode
 Most of the users said that they prefer the encoder better
 
 
+https://user-images.githubusercontent.com/49267393/196066486-4902ae31-eee8-484a-acc1-9cc189d98eb4.MOV
+
+I decided to use the encoder to put in the code. 
+The users can press the encoder to signal that they selected a number
+
+The main problem now would be how to position the encoder.
+Upon deciding whether I want to add a separate conttainer for the encoder, 
+I decided that it would be best ot put them together
+
 **\*\*\*Build a cardbord prototype of your design.\*\*\***
+I wanted to use the "coupon-book" design so I cutout a cardboard
+
+
+https://user-images.githubusercontent.com/49267393/196067499-07ff58a2-832a-4635-a2d0-1f3739828cec.mov
+
+And then I cut out a piece of card board as the window for the device and I taped it to the back of the coupon-book.
+![IMG_7118](https://user-images.githubusercontent.com/49267393/196068785-199582f4-acd0-468e-a37b-5f6734c0be79.jpg)
+
+I also attached two more sensors to the back of the coupon book. 
+My wires for some reason would not sense the sensor and the joystick was kind of useless, and so I did not actually prototype these two sensors.
+https://user-images.githubusercontent.com/49267393/196068788-10d978f3-27aa-41cf-a4fe-da1c894492a1.MOV
+
+Elaboration on what these two sensors do will be in Part 2
+
+
+
 
 
 ## LAB PART 2
@@ -359,6 +384,36 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
+
+
+https://user-images.githubusercontent.com/49267393/196069033-6e162826-8d85-44bb-b09e-2fc3cb87d80c.MOV
+
+Because I am not talented in my handicraft, this video shows a very shabby attempt at creating "a coupon book"
+It should look like this drawing right here. 
+![IMG_4840AA564B3D-1](https://user-images.githubusercontent.com/49267393/196069247-ef729f59-676d-4411-acf7-109b6edf6d24.jpeg)
+
+While the current bookis extremely heavy, if I had the resources and the chance,I would cut down the book to a smaller size so that it would be more portable.
+
+
 * "Works like": shows what the device can do
+
+https://user-images.githubusercontent.com/49267393/196069033-6e162826-8d85-44bb-b09e-2fc3cb87d80c.MOV
+
+As this video illustrates, you can adjust the rotary encoder to put in the special code that the user has given you to access your coffee gift.
+What this part was supposed to do (before I realized that the joystick did not work) was that it would be able to shift through the different 
+coupons that you got from your friend. 
+
+![IMG_528C3C02648D-1](https://user-images.githubusercontent.com/49267393/196069546-3be8d259-d283-4dab-9ed3-1dea243cf311.jpeg)
+
 * "Acts like": shows how a person would interact with the device
+
+
+
+https://user-images.githubusercontent.com/49267393/196069867-57a833f7-a745-4313-942f-189c866131b7.mov
+
+
+
+Feedback from Maria:
+Besides the cardboard falling apart, the design is a cute approach, but I dont know if it's a comfortable user experience.
+t would be better if it was in a box or maybe drawer format where you can slide out the coupon book inside
 
