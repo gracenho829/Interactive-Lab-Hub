@@ -174,14 +174,13 @@ def main():
     stream.start_stream()
     if True:
         while True:
-            
+            draw_circle_2(center_x, center_y)
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
             drawText = "Today's sleeping habits"
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
             y = top
             if (volumneSlow > 100) :
                 draw.text((x, y), drawText + " \n" + str(volumneSlow), font=font, fill="#FFFFFF")
-                draw_circle_2(center_x, center_y)
                 y += font.getsize(drawText)[1]
 
                ### draw.text((x, y), "You snored. \n Severity : \n4.5 out of 10 \n" + str(volumneSlow), font=font, fill="#FFFFFF")
