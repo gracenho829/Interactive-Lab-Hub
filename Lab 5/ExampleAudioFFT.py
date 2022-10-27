@@ -121,7 +121,7 @@ oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
 
-def draw_circle_2(center_x,center_y):
+def draw_circle_2(center_x,center_y, radius, x_inc, y_inc):
     draw_circle(center_x, center_y, radius, col=0)
 
     # if bouncing off right
@@ -174,7 +174,7 @@ def main():
     stream.start_stream()
     if True:
         while True:
-            draw_circle_2(center_x, center_y)
+            draw_circle_2(center_x, center_y,radius, x_inc, y_inc)
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
             drawText = "Today's sleeping habits"
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
