@@ -88,7 +88,7 @@ def draw_circle(xpos0, ypos0, rad, col=1):
     dx = 1
     dy = 1
     err = dx - (rad << 1)
-    while x >= y:
+    while x >= yPosition:
         oled.pixel(xpos0 + xPosition, ypos0 + yPosition, col)
         oled.pixel(xpos0 + yPosition, ypos0 + xPosition, col)
         oled.pixel(xpos0 - yPosition, ypos0 + xPosition, col)
