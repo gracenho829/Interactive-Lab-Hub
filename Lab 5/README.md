@@ -363,6 +363,21 @@ I use these three components.
 The Pi keeps record of the volume. The webcam detects the noises. and the OLED screen lights if it detects signs of sleep apnea.
 
 
+https://user-images.githubusercontent.com/49267393/198308215-7361116a-2445-493e-a0a4-3f2f31946816.mp4
+
+
+In this video, I turned on a video that has sleep apnea noises along with snoring. 
+The video shows the pi and the oled light up when it detects wheezing & coughing. 
+
+
+
+https://user-images.githubusercontent.com/49267393/198308524-1fd44936-120b-4cb6-b97c-ad9b19c94ea2.mp4
+
+In order to test it, I left the pi overnight, and slept through. 
+I do not have sleep apnea. If it is working properly, then it should not light up during the night. 
+And as I predicted, the screen remained black in the morning.
+
+However, because I don't have sleep apnea, I don't know if the pi can successfully detect snoring, sleep apnea, and other sleeping habits like grinding teeth
 
 
 
