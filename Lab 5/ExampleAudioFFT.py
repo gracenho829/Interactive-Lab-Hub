@@ -174,6 +174,7 @@ def main():
     stream.start_stream()
     if True:
         while True:
+            oled.fill(0)
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
             drawText = "Today's sleeping habits"
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
