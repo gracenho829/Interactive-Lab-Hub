@@ -340,17 +340,29 @@ or the device physically falls and dismantles
 => Blinking lights to indicate that the device is functioning properly 
 
 * How does X feel?
-=> I don't understand 
+=> X just feels like an easy to use 
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
-
-https://user-images.githubusercontent.com/49267393/197666659-b9f2172e-f6f9-4c3e-9c4d-c13057ab51e6.mov
-
-
+--> This video will be included in the part2
 
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+In order to test how the device, I used video that had a recording of a mixture of snoring & sleep apnea noises.
+
+![Alt text](images/screenshot.png "Materials")
+
+I use these three components. 
+
+![Alt text](images/IMG_7480.jpg "Materials")
+
+The Pi keeps record of the volume. The webcam detects the noises. and the OLED screen lights if it detects signs of sleep apnea.
+
+
+
+
+

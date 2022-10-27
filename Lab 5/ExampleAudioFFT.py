@@ -243,6 +243,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print("Something happend with the audio example. Stopping!") 
 
 
