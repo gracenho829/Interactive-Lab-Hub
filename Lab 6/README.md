@@ -122,6 +122,8 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+I chose the rotary encoder to implement the data.
+
 
 ### Part D
 ### The One True ColorNet
