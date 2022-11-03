@@ -124,6 +124,15 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 I chose the rotary encoder to implement the data.
 
+ ```
+while True:
+	position = -encoder.position
+	val = "Encoder Position" + str(position)
+	print(val)
+	client.publish(topic,val)
+	time.sleep(0.25)
+```
+I wrote it to publish the encoder position 
 
 ### Part D
 ### The One True ColorNet
