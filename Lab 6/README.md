@@ -1,6 +1,7 @@
 # Little Interactions Everywhere
 
 **NAMES OF COLLABORATORS HERE**
+James Donnelly
 
 ## Prep
 
