@@ -89,6 +89,16 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+1. At the hospital, when nurses might want to ping doctors with information about patients coming in. 
+
+2. Teachers when they want to silently communicate to their students that they want to have a word with them outside of class, perhaps to talk about a concerning behavior. 
+
+3. At coffee shops/bars: Customers take a device, put in a drink that they want, and then baristas can notify them when their drink is ready. 
+
+4. Morse Code for kids. You can connect a joystick or button to the pi and have one kid send more code and have the other kid accept it as a decoded message.
+
+5. A cheap alternative to Apple Tags: Attach it to your wallet or your phone with a GPS system. When you lose your item, you an have it message you the location of where it is in . 
+
 ### Part C
 ### Streaming a Sensor
 
