@@ -113,12 +113,24 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 <img src="https://media.discordapp.net/attachments/679721816318803975/823299613812719666/PXL_20210321_205742253.jpg" height="150">
 </p>
 
+
+
  ```
  (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/Lab 6 $ python distributed_twizzlers_sender.py
  ...
  ```
 
+
+
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+
+![Alt text](resource/Photo%20on%202022-11-06%20at%202.34%20PM.jpg "Materials")
+
+I didn't have twizzlers so I just set it up like this. 
+
+![Alt text](resource/Screenshot%202022-11-06%20at%202.33.40%20PM.png "Materials")
+
+This is the result of the MQTT Explorer
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
@@ -133,6 +145,9 @@ while True:
 	time.sleep(0.25)
 ```
 I wrote it to publish the encoder position 
+
+![Alt text](resource/screenshot.png "Materials")
+![Alt text](resource/EncoderTerminal.png "EncoderTerminal")
 
 ### Part D
 ### The One True ColorNet
