@@ -323,6 +323,12 @@ The capactive sensor will be attached to the door knob and the pi will sense whe
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
+This video was created to answer questions 3 & 4
+
+https://user-images.githubusercontent.com/49267393/200338092-93d4d876-ea3f-475c-9baa-3e08573214b2.mp4
+
+
+
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
