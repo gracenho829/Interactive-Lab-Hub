@@ -310,9 +310,7 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
-"Touch-Security" 
-The capactive sensor will be attached to the door knob and the pi will sense whenever someone touches the pi, send the information over to the receiver pi (in this case, the user), and the user will be alerted when someone trespasses into their room. 
-
+"Touch-Security" The capactive sensor will be attached to the door knob and the pi will sense whenever someone touches the pi, send the information over to the receiver pi (in this case, the user), and the user will be alerted when someone trespasses into their room. This is helpful to the user both for safety concerns, as well as for simple convenience, as they might be expecting a guest, and the system would alert them when their guest has entered through their door.
 
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
@@ -321,9 +319,9 @@ The capactive sensor will be attached to the door knob and the pi will sense whe
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
-For the "intruder" it is designed so that they do not know about the system at all. The device is set up behind the door so that the intruder is not aware of what is going on at the other side of the door. 
+For the "intruder" it is designed so that they do not know about the system at all. The device is set up behind the door so that the intruder is not aware of what is going on at the other side of the door. If the user on the inside encountered the device, after seeing a device hooked up to a door with a receiver, and seeing that the light on the receiver started to flash red, it's likely that the user would get a clear indication that something was going on with the door, and it probably wouldn't take long for them to understand that someone was trying to get in through the door.
 
-For the "user" of the pi system, it will simply alert them with a bright LED light. 
+
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
