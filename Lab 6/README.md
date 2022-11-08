@@ -321,6 +321,10 @@ The capactive sensor will be attached to the door knob and the pi will sense whe
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
+For the "intruder" it is designed so that they do not know about the system at all. The device is set up behind the door so that the intruder is not aware of what is going on at the other side of the door. 
+
+For the "user" of the pi system, it will simply alert them with a bright LED light. 
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
 This video was created to answer questions 3 & 4
